@@ -15,7 +15,7 @@ function updateCountdown() {
     
     // Calculate the time until next tomorrow
     const nextTomorrow = new Date(now);
-    nextTomorrow.setDate(now.getDate() + 2);
+    nextTomorrow.setDate(now.getDate() + 1);
     nextTomorrow.setHours(0, 0, 0, 0); // Set time to 00:00:00
     
     // Calculate the difference in milliseconds
