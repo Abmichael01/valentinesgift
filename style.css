@@ -40,6 +40,21 @@ body{
 
 }
 
+.stop{
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: #990c2f;
+    background-color: #fff;
+    border-radius: 20px;
+    border: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
 .welcome h2{
     font-size: 30px;
     color: #fff;
@@ -181,6 +196,7 @@ body{
     display: none;
     align-items: center;
     justify-content: center;
+    
 
 }
 
@@ -236,6 +252,21 @@ body{
         750px 20px #ffa1d0;
 }
 
+.suprise-cont a{
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: #990c2f;
+    background-color: #fff;
+    border-radius: 20px;
+    border: none;
+    position: absolute;
+    top: 90%;
+    right: 10px;
+    text-decoration: none;
+
+}
+
 .clouds{
     position: absolute;
     width: 200px;
@@ -280,7 +311,7 @@ body{
 
 .heart2{
     top: -100px;
-    left: 130px;
+    left: 350px;
     animation: move-up 8s linear infinite 1s;
     opacity: 0;
 }
@@ -288,7 +319,7 @@ body{
 .heart3{
     top: -100px;
     right: 300px;
-    animation: move-up 8s linear infinite 5s;
+    animation: move-up 8s linear infinite 0s;
     opacity: 0;
 }
 
@@ -301,7 +332,7 @@ body{
 
 .heart5{
     top: -100px;
-    left: 150px;
+    left: 100px;
     animation: move-up 8s linear infinite .3s;
     /* animation-delay: 0s; */
     opacity: 0;
@@ -309,36 +340,36 @@ body{
 
 .heart6{
     top: -100px;
-    left: 200px;
-    animation: move-up 8s linear infinite 7s;
+    left: 350px;
+    animation: move-up 8s linear infinite 10s;
     opacity: 0;
 }
 
 .heart7{
     top: -100px;
-    right: 140px;
+    right: 300px;
     animation: move-up 8s linear infinite 8s;
     opacity: 0;
 }
 
 .heart8{
     top: -100px;
-    right: 160px;
-    animation: move-up 8s linear infinite 4s;
+    right: 110px;
+    animation: move-up 8s linear infinite 3.5s;
     opacity: 0;
 }
 
 .heart10{
     top: -100px;
-    right: 140px;
-    animation: move-up 8s linear infinite 8s;
+    right: 200px;
+    animation: move-up 8s linear infinite 9s;
     opacity: 0;
 }
 
 .heart9{
     top: -100px;
-    right: 160px;
-    animation: move-up 8s linear infinite 4s;
+    right: 260px;
+    animation: move-up 8s linear infinite 5s;
     opacity: 0;
 }
 
@@ -418,8 +449,9 @@ body{
 
 @media (max-width: 450px){
     .text{
-        top: 100px;
-        font-size: 40px;
+        top: 150px;
+        font-size: 50px;
+        margin-left: -10px;
     }
 
     .msg{
@@ -429,9 +461,100 @@ body{
 
 @media (max-width: 300px){
     .text{
-        top: 200px;
-        font-size: 30px;
+        top: 150px;
+        font-size: 50px;
         text-align: center;
         
+    }
+
+    .heart1{
+        top: -100px;
+        left: 100px;
+        animation: move-up 8s linear infinite .2s;
+        /* animation-delay: 0s; */
+        opacity: 0;
+    }
+    
+    .heart2{
+        top: -100px;
+        left: 150px;
+        animation: move-up 8s linear infinite 5s;
+        opacity: 0;
+    }
+    
+    .heart3{
+        top: -100px;
+        right: 180px;
+        animation: move-up 8s linear infinite 0s;
+        opacity: 0;
+    }
+    
+    .heart4{
+        top: -100px;
+        right: 100px;
+        animation: move-up 8s linear infinite 2s;
+        opacity: 0;
+    }
+    
+    .heart5{
+        top: -100px;
+        left: 120px;
+        animation: move-up 8s linear infinite 3s;
+        /* animation-delay: 0s; */
+        opacity: 0;
+    }
+    
+    .heart6{
+        top: -100px;
+        left: 80px;
+        animation: move-up 8s linear infinite 9s;
+        opacity: 0;
+    }
+    
+    .heart7{
+        top: -100px;
+        right: 100px;
+        animation: move-up 8s linear infinite 8s;
+        opacity: 0;
+    }
+    
+    .heart8{
+        top: -100px;
+        right: 140px;
+        animation: move-up 8s linear infinite 3.5s;
+        opacity: 0;
+    }
+    
+    .heart10{
+        top: -100px;
+        right: 50px;
+        animation: move-up 8s linear infinite 7s;
+        opacity: 0;
+    }
+    
+    .heart9{
+        top: -100px;
+        right: 300px;
+        animation: move-up 8s linear infinite 11s;
+        opacity: 0;
+    }
+
+    
+}
+
+
+
+.big{
+    animation: big .3s linear;
+}
+
+
+
+
+@keyframes big {
+    0%{
+        transform: scale(1);
+    }100%{
+        transform: scale(5);
     }
 }
